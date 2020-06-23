@@ -1,0 +1,12 @@
+
+---
+# This task installs and enables apache on webservers
+- name: ensure apache is installed
+  yum: pkg=httpd state=latest
+- name: ensure apache is running
+  service: name=httpd state=running enabled=yes
+- name: copy files to document root
+  copy: src=image.png dest=/var/www/html/image.png
+- name: copy application code to document root
+  template: src=index.html.j2 dest=/var/www/html/index.html
+  notify: restart apache

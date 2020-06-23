@@ -1,0 +1,6 @@
+[ansadm@ipa tasks]$ cat main.yml
+- name: Copy and run script
+  script: /home/ansadm/hostcheckv4.sh
+  register: command_result
+
+- debug: msg="{{ command_result.stdout }}"

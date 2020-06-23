@@ -1,0 +1,4 @@
+Demo to install a package: As root privilege is required to install a package, we make the ansadm user of the control machine as a root user on all machines
+$ vi /etc/sudoers
+## ANSIBLE ADMIN USERansadm ALL=NOPASSWD: ALL
+$ ansible all -m yum -a “name=httpd state=present” -s

@@ -1,0 +1,4 @@
+[ansadm@ipa tasks]$ cat playbook.yml
+ - hosts: all
+   roles:
+    - role: basic

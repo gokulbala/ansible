@@ -1,0 +1,2 @@
+Demo to Start a service
+$ ansible all -m service -a “name=httpd state=started” -a

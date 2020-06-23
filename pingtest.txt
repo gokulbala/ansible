@@ -1,0 +1,2 @@
+Demo to ping all target instances:
+$ ansible all -m ping
