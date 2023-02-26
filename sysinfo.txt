@@ -1,2 +1,2 @@
-Demo to obtain system information
+Demo to obtain system information 
 $ ansible all -m shell -a “uname -a;df -h"

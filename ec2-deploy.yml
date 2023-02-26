@@ -1,4 +1,4 @@
----
+--- 
 # This playbook is an example for deploying an EC2 instance
 # Run this with ansible-playbook and supply the private key for your EC2 user
 #

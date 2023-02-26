@@ -1,4 +1,4 @@
----
+--- 
 ### provision AWS EC2 instance
 - hosts: localhost
   connection: local
