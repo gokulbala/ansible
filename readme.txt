@@ -1,0 +1,1 @@
+These scripts have been developed for provisioning AWS Environment through Ansible
